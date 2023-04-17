@@ -1,0 +1,42 @@
+/** @format **/
+
+@import "./base/reset.css";
+@import "./helps/colors.css";
+
+@import "./componets/alert.css";
+
+@import "./componets/body.css";
+
+@import "./componets/header.css";
+
+@import "./componets/menu.css";
+
+@import "./componets/logo.css";
+
+@import "./componets/cart-shopping-cart.css";
+
+@import "./componets/section.css";
+@import "./componets/card-session.css";
+
+@import "./componets/card-courses.css";
+
+@import "./componets/card-course-payment.css";
+@import "./componets/conten-info-payment-dateway.css";
+
+@import "./componets/card-payment-gateway.css";
+
+@import "./componets/sectio-delete-profile-logout.css";
+
+@import "./componets/section-user-information.css";
+
+@import "./componets/section-purchased-courses.css";
+@import "./componets/cart-course-purchased.css";
+
+@import "./componets/section-search-account.css";
+@import "./componets/section-accounts-in-admin.css";
+
+@import "./componets/modal.css";
+
+.show {
+  display: block;
+}

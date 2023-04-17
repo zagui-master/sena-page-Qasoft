@@ -1,0 +1,49 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Log in to Qasoft</title>
+  </head>
+  <body>
+    <sectio class="section-session section-log-in">
+      <div class="card">
+        <div class="header-card header-card-log-in">
+          <h2 class="header-title">Log in to Qasoft</h2>
+          <h3 class="header-caption">It's quick and easy.</h3>
+        </div>
+        <form class="form-card form-login" id="form_log_in">
+          <div class="container-input">
+            <input
+              type="text"
+              name="email-login"
+              id="user_email_login"
+              placeholder="Email"
+            />
+            <span id="alert_email_login"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="password"
+              name="password-login"
+              id="user_password_login"
+              placeholder="Password"
+            />
+            <span id="alert_password_login"></span>
+          </div>
+          <button type="submit" class="button-form button-form-login">
+            Log in
+          </button>
+        </form>
+        <footer class="footer-card footer-card-log-in">
+          <a href="./pages/sign-up.html">Create new account</a>
+        </footer>
+      </div>
+    </sectio>
+  </body>
+  <script src="./js/modules/log-in.js" type="module"></script>
+</html>

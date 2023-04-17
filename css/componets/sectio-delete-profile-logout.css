@@ -1,0 +1,33 @@
+/** @format */
+
+.sectio-delete-profile-logout {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.sectio-delete-profile-logout > button {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.sectio-delete-profile-logout > button:first-child {
+  background-color: var(--black_text_1);
+  color: var(--white_1);
+}
+
+.sectio-delete-profile-logout > button:last-child {
+  background-color: var(--blue_1);
+  color: var(--white_1);
+}

@@ -1,0 +1,188 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/Qasoft.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Qasoft</title>
+  </head>
+  <body>
+    <header class="header header-user">
+      <div class="conteiner-header">
+        <div class="conten-logo-user">
+          <a href="./admin.html">
+            <h1 class="logo">Qasoft</h1>
+          </a>
+          <span class="conteiner-user-name" id="conteiner_user_name"></span>
+        </div>
+
+        <div class="conteniner-menu">
+          <ul class="menu">
+            <li class="item-menu">
+              <span id="btn_create_accout" style="cursor: pointer"
+                >Create new user account</span
+              >
+            </li>
+            <li class="item-menu">
+              <span id="btn_log_out" style="cursor: pointer">Log out</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="section_search_account" class="section-search-account">
+      <input
+        type="text"
+        name=""
+        id="search_account"
+        placeholder="Search user by account or name"
+      />
+    </section>
+
+    <section
+      class="section-accounts-in-admin"
+      id="section_accounts_in_admin"
+    ></section>
+
+    <!----------------------------------------------------------------------------->
+
+    <div
+      class="modal-delete-user-account-by-admin modal"
+      id="modal_delete_user_account_by_admin"
+    >
+      <div class="card">
+        <div class="header-card header-card-log-in">
+          <h2 class="header-title">Delete account</h2>
+        </div>
+        <form class="form-card" id="form_delete_account_by_admin">
+          <div class="container-input">
+            <input
+              type="email"
+              name="user-account"
+              id="user_account"
+              placeholder="User account"
+            />
+            <span id="alert_user_account_by_admin"></span>
+          </div>
+          <div class="container-input">
+            <div class="line-form-admin"></div>
+          </div>
+          <div class="container-input">
+            <input
+              type="text"
+              name="admin-account"
+              id="admin_account"
+              placeholder="Admin account"
+            />
+            <span id="alert_admin_account_by_admin"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="password"
+              name="password-login"
+              id="admin_password"
+              placeholder="Admin password"
+            />
+            <span id="alert_password_by_admin"></span>
+          </div>
+          <button type="submit" class="button-form button-delete-account">
+            Delete account
+          </button>
+          <span class="button-form" id="btn_cancel">Cancel</span>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-create-account modal" id="modal_create_account">
+      <div class="card">
+        <div class="header-card header-card-log-in">
+          <h2 class="header-title">Create account</h2>
+        </div>
+        <form class="form-card" id="form_sign_up">
+          <div class="container-input">
+            <input type="text" name="name" id="user_name" placeholder="Name" />
+            <span id="alert_name"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="text"
+              name="name"
+              id="user_last_name"
+              placeholder="Last name"
+            />
+            <span id="alert_last_name"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="Email"
+            />
+            <span id="alert_email"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="number"
+              name="phone-number"
+              id="user_phone_number"
+              placeholder="Phone number"
+            />
+            <span id="alert_phone_number"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="password"
+              name="password"
+              id="user_password"
+              placeholder="New password"
+            />
+            <span id="alert_password"></span>
+          </div>
+          <button type="submit" class="button-form">Create account</button>
+          <span
+            class="button-form button-delete-account"
+            id="btn_cancel_create_account"
+          >
+            Cancel
+          </span>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="../js/modules/show-user-name-admin.js" type="module"></script>
+  <script src="../js/modules/search-account-by-admin.js" type="module"></script>
+  <script src="../js//modules/log-out-by-admin.js" type="module"></script>
+  <script
+    src="../js/modules/delete-user-account-by-admin.js"
+    type="module"
+  ></script>
+  <script
+    src="../js/modules/show-modal-create-account-by-admin.js"
+    type="module"
+  ></script>
+  <script
+    src="../js/modules/show-user-accounts-in-admin.js"
+    type="module"
+  ></script>
+  <script src="../js/modules/create-account-by-admin.js" type="module"></script>
+</html>
+<!--
+    
+   
+  
+  SOLO QUEDA CREAR LOS MODALES Y LA LOGICA
+  MODAL ELIMINAR CUENTA DE USUARIO
+  MODAL CERAR NUEVA CUENTA DE USUSARIO
+  
+-->

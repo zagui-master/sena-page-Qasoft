@@ -1,0 +1,22 @@
+/** @format */
+
+.section-search-account {
+  margin-top: 170px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-search-account > input {
+  width: 80%;
+  border: none;
+  padding: 20px;
+  box-shadow: 0px -1px 4px var(--black_box_shadow),
+    0px 8px 16px var(--black_box_shadow);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--black_text_1);
+  font-size: 14px;
+}

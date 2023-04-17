@@ -1,0 +1,19 @@
+/** @format */
+
+body {
+  background-color: var(--bg_color_main);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue_1);
+  border-radius: 8px;
+  border: 2px solid var(--white_1);
+}

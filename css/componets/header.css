@@ -1,0 +1,26 @@
+/** @format */
+
+.header {
+  width: 100%;
+  background-color: var(--blue_1);
+  position: fixed;
+  top: 0;
+}
+
+.conten-logo-user {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.conteiner-user-name {
+  color: var(--white_1);
+  font-weight: 400;
+}
+
+.conteniner-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

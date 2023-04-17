@@ -1,0 +1,74 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <section class="section-session section-sign-up">
+      <div class="card">
+        <div class="header-card header-card-log-in">
+          <h2 class="header-title">Create a new account Qasoft</h2>
+          <h3 class="header-caption">It's quick and easy.</h3>
+        </div>
+        <form class="form-card form-signup" id="form_sign_up">
+          <div class="container-input">
+            <input type="text" name="name" id="user_name" placeholder="Name" />
+            <span id="alert_name"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="text"
+              name="last-name"
+              id="user_last_name"
+              placeholder="Last name"
+            />
+            <span id="alert_last_name"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="Email"
+            />
+            <span id="alert_email"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="number"
+              name="phone-number"
+              id="user_phone_number"
+              placeholder="Phone number"
+            />
+            <span id="alert_phone_number"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="password"
+              name="password"
+              id="user_password"
+              placeholder="New password"
+            />
+            <span id="alert_password"></span>
+          </div>
+          <button type="submit" class="button-form button-signup">
+            Sign up
+          </button>
+        </form>
+        <footer class="footer-card footer-card-signup">
+          <a href="../index.html">Already have an account?</a>
+        </footer>
+      </div>
+    </section>
+    <script src="../js/modules/sign-up.js" type="module"></script>
+  </body>
+</html>
+<!--
+    
+-->

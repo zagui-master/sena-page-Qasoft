@@ -1,0 +1,67 @@
+/** @format */
+
+.section-accounts-in-admin {
+  width: 90%;
+  max-height: 420px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  background: var(--white_2);
+  box-shadow: 0px -1px 4px var(--black_box_shadow),
+    0px 8px 16px var(--black_box_shadow);
+  padding: 30px;
+  overflow-y: scroll;
+}
+.section-accounts-in-admin::-webkit-scrollbar {
+  display: none;
+}
+.card-account {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background: var(--white_2);
+  box-shadow: 0px -1px 4px var(--black_box_shadow),
+    0px 8px 16px var(--black_box_shadow);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.conten-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.card-account-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--black_text_1);
+}
+
+.card-account-info {
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.card-account > button {
+  width: 260px;
+  height: 30px;
+  background-color: var(--black_text_1);
+  color: var(--white_1);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.filter {
+  display: none;
+}

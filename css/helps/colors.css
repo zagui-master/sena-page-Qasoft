@@ -1,0 +1,17 @@
+/** @format */
+
+:root {
+  --bg_color_main: #f0f2f5;
+  --white_1: #fcfcfc;
+  --white_2: #fff;
+  --white_3: #e7f3ff;
+  --blue_1: #1877f2;
+  --blue_2: #0363d9;
+  --gray_border_1: #dddfe2;
+  --gray_border_2: #ccd0d5;
+  --gray_placeholder: #90949c;
+  --black_text_1: #1d2129;
+  --black_text_2: #000;
+  --black_box_shadow: rgba(0, 0, 0, 0.1);
+  --red: #ff0000;
+}

@@ -1,0 +1,153 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Qasoft payment</title>
+  </head>
+  <body class="body">
+    <header class="header header-user">
+      <div class="conteiner-header">
+        <div class="conten-logo-user">
+          <a href="./courses.html">
+            <h1 class="logo">Qasoft</h1>
+          </a>
+          <span class="conteiner-user-name" id="conteiner_user_name"></span>
+        </div>
+
+        <div class="conteniner-menu">
+          <ul class="menu">
+            <li class="item-menu">
+              <div class="lateral-bar"></div>
+              <a href="./courses.html" class="link-header">Courses</a>
+            </li>
+            <li class="item-menu">
+              <div class="lateral-bar focus-bar"></div>
+              <div class="conteiner-shopping-car">
+                <span class="focus-link">Pyament</span>
+              </div>
+            </li>
+            <li class="item-menu">
+              <div class="lateral-bar"></div>
+              <div class="conten-icon-user">
+                <a href="./profile.html">
+                  <img
+                    src="../assets/icon-page/icon_user_header.svg"
+                    alt=""
+                    class="icon-header"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="conten-courses-payment" id="conten_courses_payment"></div>
+
+    <div class="conten-payment-gateway">
+      <div class="conten-total-paymen">
+        <span id="total_payment">total 3000</span>
+      </div>
+
+      <form id="form_payment" class="form-payment">
+        <div class="option-payment">
+          <div class="credit-debit-card">
+            <label for="credit">
+              <input type="radio" name="method" id="credit" checked />
+              <span>Credit card</span>
+            </label>
+
+            <label for="debit">
+              <input type="radio" name="method" id="debit" />
+              <span>Debit card</span>
+            </label>
+          </div>
+          <div class="icons-payment">
+            <img src="../assets/icon-payment/icon_visa.svg" alt="" />
+            <img src="../assets//icon-payment/icon_mastercard.svg" alt="" />
+          </div>
+        </div>
+        <div class="conten-input">
+          <input
+            type="number"
+            name=""
+            id="card_number"
+            placeholder="Card number"
+          />
+          <span id="alert_card_number"></span>
+        </div>
+        <div class="conten-input">
+          <input
+            type="text"
+            name=""
+            id="cardholder_name"
+            placeholder="Cardholder name"
+          />
+          <span id="alert_cardholder_name"></span>
+        </div>
+        <div class="conten-input conten-input-date-security-code">
+          <div class="conten-input-date">
+            <div class="conten-input-month-year">
+              <input type="number" name="" id="card_month" placeholder="(MM" />
+              <span>/</span>
+              <input type="number" name="" id="card_year" placeholder="AA)" />
+            </div>
+            <span id="alert_month_year"></span>
+          </div>
+
+          <div class="conte-input-security-code">
+            <input
+              type="number"
+              name=""
+              id="security_code"
+              placeholder="Security code"
+            />
+            <span id="alert_security_code"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn-payment">Pay</button>
+      </form>
+    </div>
+    <section class="section-info-payment-dateway">
+      <div class="card-info-payment-dateway">
+        <div class="card-info">
+          <span class="title">Card number</span>
+          <span class="description">1234245865807543</span>
+        </div>
+        <div class="card-info">
+          <span class="title">Cardholder name</span>
+          <span class="description">Mastercard</span>
+        </div>
+        <div class="card-info">
+          <span class="title">(MM / AA)</span>
+          <span class="description">12 / 27</span>
+        </div>
+        <div class="card-info">
+          <span class="title">Security code</span>
+          <span class="description">123</span>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="../js/index.js" type="module"></script>
+
+  <script src="../js/modules/show-courses-to-payment.js" type="module"></script>
+
+  <script
+    src="../js/modules/delete-course-in-payment.js"
+    type="module"
+  ></script>
+
+  <script
+    src="../js/modules/calculate-final-price-in-payment.js"
+    type="module"
+  ></script>
+
+  <script src="../js/modules/buy-course.js" type="module"></script>
+</html>

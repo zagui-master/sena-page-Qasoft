@@ -1,0 +1,68 @@
+/** @format */
+
+.conteiner-header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  padding-left: 40px;
+}
+
+.item-menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: var(--white_1);
+}
+
+.link-header {
+  color: var(--white_1);
+}
+
+.lateral-bar {
+  width: 3px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.focus-bar {
+  background-color: var(--white_1);
+}
+
+.focus-link {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.icon-header {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.conteiner-shopping-car {
+  position: relative;
+}
+
+.counter-courses-add {
+  position: absolute;
+  top: -10px;
+  color: var(--white_1);
+}
+
+.show-cart {
+  display: block;
+}

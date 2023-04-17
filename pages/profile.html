@@ -1,0 +1,169 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Qasoft</title>
+  </head>
+  <body class="body-user-profile">
+    <header class="header header-user">
+      <div class="conteiner-header">
+        <div class="conten-logo-user">
+          <a href="./courses.html">
+            <h1 class="logo">Qasoft</h1>
+          </a>
+          <span class="conteiner-user-name" id="conteiner_user_name"></span>
+        </div>
+
+        <div class="conteniner-menu">
+          <ul class="menu">
+            <li class="item-menu">
+              <div class="lateral-bar"></div>
+              <a href="./courses.html" class="link-header">Courses</a>
+            </li>
+            <li class="item-menu">
+              <div class="lateral-bar"></div>
+              <div class="conteiner-shopping-car">
+                <img
+                  src="../assets/icon-page/icon_shopping_car.svg"
+                  alt=""
+                  class="icon-header"
+                />
+                <span id="courses_add" class="counter-courses-add">0</span>
+              </div>
+            </li>
+            <li class="item-menu">
+              <div class="lateral-bar focus-bar"></div>
+              <div class="conten-icon-user">
+                <a href="./profile.html">
+                  <img
+                    src="../assets/icon-page/icon_user_header.svg"
+                    alt=""
+                    class="icon-header"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+          <!--------------------------------------------------------->
+          <div class="cart-shopping-cart">
+            <div class="conten-header">
+              <span>Courses in shopping cart</span>
+              <div class="conten-icon-up-shopp">
+                <img src="../assets/icon-page/icon_up.svg" alt="" />
+              </div>
+            </div>
+            <div class="conten-course-add" id="conten_course_add"></div>
+            <div class="conteiner-final-price">
+              <span id="conten_final_price_cart">Total $0</span>
+            </div>
+            <button class="btn-clear-cart-course" id="btn_clear_cart_course">
+              Delete all
+            </button>
+            <button class="btn-clear-cart-course" id="btn_pay_all">
+              Pay all
+            </button>
+          </div>
+          <!--------------------------------------------------------->
+        </div>
+      </div>
+    </header>
+    <section class="section-user-information">
+      <div class="card-user-information">
+        <img src="../assets/icon-page/icon_black_user.svg" alt="" />
+        <span id="full_name_user"></span>
+      </div>
+    </section>
+    <section class="sectio-delete-profile-logout">
+      <button id="btn_delete_profile">Delete profile</button>
+      <button id="btn_log_out">Log out</button>
+    </section>
+    <div class="modal-delete-account modal">
+      <div class="card">
+        <div class="header-card header-card-log-in">
+          <h2 class="header-title">Delete my account</h2>
+        </div>
+        <form class="form-card" id="form_delete_account">
+          <div class="container-input">
+            <input
+              type="email"
+              name="user-email"
+              id="user_email_delete_account"
+              placeholder="Email"
+            />
+            <span id="alert_user_email"></span>
+          </div>
+
+          <div class="container-input">
+            <input
+              type="number"
+              name="user-phone-number"
+              id="user_phone_number_delete_account"
+              placeholder="Phone number"
+            />
+            <span id="alert_user_phone_number"></span>
+          </div>
+          <div class="container-input">
+            <input
+              type="password"
+              name="password-login"
+              id="user_password_delete_account"
+              placeholder="Password"
+            />
+            <span id="alert_user_password"></span>
+          </div>
+          <button type="submit" class="button-form button-delete-account">
+            Delete account
+          </button>
+          <button id="cancel" class="button-form">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <sectio class="section-purchased-courses">
+      <h2>My courses</h2>
+      <div class="conten-courses-purchased" id="purchased_courses"></div>
+    </sectio>
+  </body>
+  <script src="../js/modules/show-user-information-in-profile.js"></script>
+  <script src="../js/index.js" type="module"></script>
+  <script src="../js/modules/log-out.js" type="module"></script>
+  <script src="../js/modules/delete-account-by-user.js" type="module"></script>
+  <script
+    src="../js/modules/show-purchased-courses-by-user.js"
+    type="module"
+  ></script>
+  <script
+    src="../js/modules/show-courses-in-shopping-cart.js"
+    type="module"
+  ></script>
+  <script
+    src="../js/modules/show-modal-delete-account.js"
+    type="module"
+  ></script>
+  <script
+    src="../js/modules/delete-course-in-shopping-cart.js"
+    type="module"
+  ></script>
+  <script
+    src="../js/modules/delete-all-courses-in-shopping-cart.js"
+    type="module"
+  ></script>
+
+  <script
+    src="../js/modules/calculate-final-price-in-shopping-cart.js"
+    type="module"
+  ></script>
+
+  <script
+    src="../js/modules/count-number-of-courses-added.js"
+    type="module"
+  ></script>
+
+  <script src="../js/modules/drop-down-shopping-cart.js" type="module"></script>
+  <script src="../js/modules/go-to-pay-courses.js" type="module"></script>
+</html>

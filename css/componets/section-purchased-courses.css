@@ -1,0 +1,15 @@
+/** @format */
+
+.section-purchased-courses {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+.section-purchased-courses > h2 {
+  font-size: 35px;
+}

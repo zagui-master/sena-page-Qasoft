@@ -1,0 +1,15 @@
+/** @format */
+
+.alert-input {
+  border: 1.5px solid var(--red) !important;
+  box-shadow: none !important;
+  caret-color: var(--red) !important;
+}
+.alert-text {
+  color: var(--red);
+  display: block !important;
+  font-size: 12px;
+  margin-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,158 @@
+/** @format */
+
+.show {
+  display: block;
+}
+
+.cart-shopping-cart {
+  min-width: 320px;
+  max-height: 500px;
+  background: var(--white_2);
+  box-shadow: 0px 2px 4px var(--black_box_shadow),
+    0px 8px 16px var(--black_box_shadow);
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  display: none;
+  top: 50px;
+  right: -25px;
+  z-index: 1000;
+}
+
+.conten-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--gray_border_1);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.conten-header > span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.conten-icon-up-shopp {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.conten-icon-up-shopp > img {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conten-course-add {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-height: 270px;
+  overflow-y: scroll;
+}
+.conten-course-add::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-course-add {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10px;
+  box-shadow: 0px -1px 4px var(--black_box_shadow),
+    0px 8px 16px var(--black_box_shadow);
+  border-radius: 8px;
+  background-color: var(--white_2);
+}
+
+.cart-course-add > img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.cart-info-course {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding-right: 20px;
+}
+
+.cart-info-course > img {
+  width: 40px;
+  height: 40px;
+}
+
+.info-course {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+}
+
+.info-course > span:first-child {
+  font-size: 16px;
+  font-weight: 600;
+}
+.info-course > span:last-child {
+  font-size: 13px;
+}
+
+.btn-cart-course-add {
+  background-color: var(--blue_1);
+  color: var(--white_2);
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.btn-cart-course-add:hover {
+  background-color: var(--blue_2);
+}
+
+.conteiner-final-price {
+  text-align: center;
+  font-weight: 600;
+  border-top: 0.5px solid var(--gray_border_1);
+  border-bottom: 0.5px solid var(--gray_border_1);
+  padding: 10px;
+}
+
+.btn-clear-cart-course {
+  width: 80%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: var(--blue_1);
+  color: var(--white_2);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.link-pay-all-cart-course {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--white_1);
+}
+
+.btn-clear-cart-course:hover {
+  background-color: var(--blue_2);
+}

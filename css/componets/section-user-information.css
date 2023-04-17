@@ -1,0 +1,21 @@
+/** @format */
+
+.section-user-information,
+.card-user-information {
+  width: 100%;
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-user-information {
+  margin-top: 0px;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
+.card-user-information > span {
+  font-size: 25px;
+  font-weight: 600;
+}
