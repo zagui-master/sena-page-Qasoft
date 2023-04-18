@@ -10,6 +10,7 @@
 }
 
 .card-user-information {
+  width: auto;
   margin-top: 0px;
   row-gap: 10px;
   flex-direction: column;
