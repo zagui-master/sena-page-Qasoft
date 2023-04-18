@@ -9,15 +9,9 @@ export const url = {
 };
 */
 export const url = {
-  log_in: "index.html",
-  sign_up: "../pages/sign-up.html",
-  courses: "../pages/courses.html",
-  payment: "../pages/payment.html",
-  admin: "../pages/admy.html",
+  log_in: "https://zagui-master.github.io/Qasoft.github.io/",
+  sign_up: "https://zagui-master.github.io/Qasoft.github.io/pages/sign-up.html",
+  courses: "https://zagui-master.github.io/Qasoft.github.io/pages/courses.html",
+  payment: "https://zagui-master.github.io/Qasoft.github.io/pages/payment.html",
+  admin: "https://zagui-master.github.io/Qasoft.github.io/pages/admy.html",
 };
-
-//log_in: "../index.html",
-//sign_up: "./pages/sign_up.html",
-//courses: "./courses.html",
-
-//https://zagui-master.github.io/Qasoft.github.io/
