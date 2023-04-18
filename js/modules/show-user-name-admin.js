@@ -6,7 +6,7 @@ export const showUserNameAdminInheader = () => {
 
   const user_account = JSON.parse(sessionStorage.getItem("current_user"));
 
-  const { role, full_name } = admin.findIndex(
+  const { role, full_name } = admin.find(
     (find) => find.account === user_account
   );
 
