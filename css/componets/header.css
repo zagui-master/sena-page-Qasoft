@@ -2,9 +2,17 @@
 
 .header {
   width: 100%;
+  min-height: 80px;
   background-color: var(--blue_1);
-  position: fixed;
-  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 50px;
+}
+
+.header > i {
+  font-size: 35px;
+  color: var(--white_2);
 }
 
 .conten-logo-user {
@@ -14,13 +22,25 @@
 }
 
 .conteiner-user-name {
+  font-size: 20px;
   color: var(--white_1);
   font-weight: 400;
-}
-
-.conteniner-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .conten-logo-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    row-gap: 10px;
+    padding: 10px;
+  }
+  .conteiner-user-name {
+    font-size: 17px;
+  }
 }

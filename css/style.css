@@ -20,6 +20,8 @@
 
 @import "./componets/card-courses.css";
 
+@import "./componets/search-course.css";
+
 @import "./componets/card-course-payment.css";
 @import "./componets/conten-info-payment-dateway.css";
 

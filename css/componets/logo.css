@@ -1,9 +1,6 @@
 /** @format */
 
-.logo {
-  font-size: 30px;
-  color: var(--white_1);
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-family: DaysOne;
+.logo > img {
+  width: 130px;
+  height: auto;
 }

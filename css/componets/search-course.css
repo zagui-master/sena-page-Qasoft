@@ -1,0 +1,42 @@
+/** @format */
+
+.search-course {
+  max-width: 700px;
+  height: auto;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-course > input {
+  width: 100%;
+  padding: 25px;
+  height: 30px;
+  border: none;
+  background-color: var(--white_2);
+  margin-inline: 20px;
+  box-shadow: 0 1px 6px 0 var(--black_box_shadow);
+  border-radius: 30px;
+}
+
+.search-course > input::placeholder {
+  text-align: center;
+}
+.search-course > input:focus {
+  box-shadow: 0px 2px 4px var(--black_box_shadow),
+    0px 8px 16px var(--black_box_shadow);
+  box-shadow: 0 1px 6px 0 var(--black_box_shadow);
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .search-course {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .search-course {
+    margin-top: 100px;
+  }
+}

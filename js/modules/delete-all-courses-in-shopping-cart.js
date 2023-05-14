@@ -1,6 +1,7 @@
 /** @format */
 
 import { showCoursesInShoppingCart } from "./show-courses-in-shopping-cart.js";
+//import { showCoursesToPayment } from "./show-courses-to-payment.js";
 import { calculateFinalPriceInShoppingCart } from "./calculate-final-price-in-shopping-cart.js";
 import { numberOfCoursesAdded } from "./count-number-of-courses-added.js";
 
@@ -14,6 +15,7 @@ const clearShoppingCart = () => {
 const handleClearCartClick = () => {
   clearShoppingCart();
   showCoursesInShoppingCart();
+  //showCoursesToPayment();
   calculateFinalPriceInShoppingCart();
   numberOfCoursesAdded();
 };

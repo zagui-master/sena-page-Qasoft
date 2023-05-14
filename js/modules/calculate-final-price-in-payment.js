@@ -1,23 +1,4 @@
 /** @format */
-/*
-export const calculateFinalPriceInPayment = () => {
-  const conten_final_price_payment = document.getElementById("total_payment");
-
-  const current_user = JSON.parse(sessionStorage.getItem("current_user"));
-  const courses = JSON.parse(localStorage.getItem(`${current_user}`)) || [];
-
-  const total = courses.reduce(
-    (acc, el) => acc + parseFloat(el.course_price),
-    0
-  );
-
-  conten_final_price_payment.innerText = `Total $  ${
-    Math.round(total * 100) / 100
-  }`;
-};
-
-calculateFinalPriceInPayment();
-*/
 
 export const calculateFinalPriceInPayment = () => {
   const paymentTotalElement = document.getElementById("total_payment");

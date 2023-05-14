@@ -1,22 +1,19 @@
 /** @format */
 
-.conteiner-header {
-  width: 90%;
-  margin: auto;
+.conteniner-menu {
+  width: 300px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  row-gap: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 50px;
 }
 
 .menu {
   display: flex;
   align-items: center;
   column-gap: 50px;
-  padding-left: 40px;
 }
 
 .item-menu {
@@ -25,7 +22,6 @@
   display: flex;
   align-items: center;
   column-gap: 10px;
-  color: var(--white_1);
 }
 
 .link-header {
@@ -65,4 +61,15 @@
 
 .show-cart {
   display: block;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .conteniner-menu {
+    width: 100%;
+    height: auto;
+    top: 92px;
+    right: 0px;
+    background-color: var(--blue_1);
+    padding: 10px;
+  }
 }

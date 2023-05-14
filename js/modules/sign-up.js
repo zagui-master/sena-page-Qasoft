@@ -4,6 +4,13 @@ import { signUpForm } from "../helpers/locatores.js";
 import { url } from "../helpers/urls.js";
 import { regex } from "../helpers/regex.js";
 
+const msgAlert = {
+  nameLastNameAlert: "The name must contains 4 characters",
+  emailAlert: "Invalid email",
+  phoneNumberAlet: "Invalid phone number",
+  passwordAlert:
+    "The password must contains uppercase, lowercases, numbers and at least 8 charaters",
+};
 const {
   form,
   name,
@@ -37,10 +44,16 @@ const getUserAccounts = () => {
   return JSON.parse(sessionStorage.getItem("account")) || [];
 };
 
-const updateFieldValidationState = (field, regex, alert) => {
+const updateFieldValidationState = (field, regex, alert, msg) => {
+  if (field.value.length === 0) {
+    alert.classList.remove("alert-text");
+    alert.textContent = "";
+    field.classList.remove("alert-input");
+    return false;
+  }
   if (!regex.test(field.value)) {
     alert.classList.add("alert-text");
-    alert.textContent = `Invalid ${field.name}`;
+    alert.textContent = msg;
     field.classList.add("alert-input");
     return false;
   } else {
@@ -53,7 +66,12 @@ const updateFieldValidationState = (field, regex, alert) => {
 
 const validateName = (name, regexName, alertName) => {
   name.addEventListener("input", () => {
-    state.name = updateFieldValidationState(name, regexName, alertName);
+    state.name = updateFieldValidationState(
+      name,
+      regexName,
+      alertName,
+      msgAlert.nameLastNameAlert
+    );
   });
 };
 
@@ -62,7 +80,8 @@ const validateLastName = (lastName, regexLastName, alertLastName) => {
     state.lastName = updateFieldValidationState(
       lastName,
       regexLastName,
-      alertLastName
+      alertLastName,
+      msgAlert.nameLastNameAlert
     );
   });
 };
@@ -70,7 +89,12 @@ const validateLastName = (lastName, regexLastName, alertLastName) => {
 const validateEmail = (email, regexEmail, alertEmail) => {
   email.addEventListener("input", () => {
     const accounts = getUserAccounts();
-    state.email = updateFieldValidationState(email, regexEmail, alertEmail);
+    state.email = updateFieldValidationState(
+      email,
+      regexEmail,
+      alertEmail,
+      msgAlert.emailAlert
+    );
     const findAccount = accounts.findIndex(
       (find) => find.email === user_email.value
     );
@@ -93,17 +117,19 @@ const validatePhoneNumber = (
     state.phoneNumber = updateFieldValidationState(
       phoneNumber,
       regexPhonNumber,
-      alertPhoneNumber
+      alertPhoneNumber,
+      msgAlert.phoneNumberAlet
     );
   });
 };
 
-const validatePassword = (password, regexPassword, alertPassword) => {
+const validatePassword = (password, regexPassword) => {
   password.addEventListener("input", () => {
     state.password = updateFieldValidationState(
       password,
       regexPassword,
-      alertPassword
+      alertPassword,
+      msgAlert.passwordAlert
     );
   });
 };
@@ -150,7 +176,6 @@ form.addEventListener("submit", (e) => {
     window.close();
   }
 });
-
 validateName(name, regexName, alertName);
 validateLastName(lastName, regexLastName, alertLastName);
 validateEmail(email, regexEmail, alertEmail);

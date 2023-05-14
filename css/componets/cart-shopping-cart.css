@@ -3,6 +3,14 @@
 .show {
   display: block;
 }
+.modal-shopping-cart {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: none;
+}
 
 .cart-shopping-cart {
   min-width: 320px;
@@ -14,10 +22,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
   position: absolute;
+  top: 70px;
+  right: 140px;
+  z-index: 2;
   display: none;
-  top: 50px;
-  right: -25px;
-  z-index: 1000;
 }
 
 .conten-header {
@@ -155,4 +163,14 @@
 
 .btn-clear-cart-course:hover {
   background-color: var(--blue_2);
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .modal-shopping-cart {
+    top: 0px;
+  }
+  .cart-shopping-cart {
+    top: 145px;
+    right: 25px;
+  }
 }
